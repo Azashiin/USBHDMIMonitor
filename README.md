@@ -11,6 +11,8 @@ This public repository is the product hub for USB HDMI Monitor:
 
 The source code is maintained separately in a private repository.
 
+![USB HDMI Monitor - In game preview](./media/screenshots/Console_On1.png)
+
 ## Why Use It
 
 - Faster and simpler than opening a full broadcast suite
@@ -36,6 +38,32 @@ Direct download:
 
 All future builds will be published through the repository `Releases` page:
 - [`Releases`](https://github.com/Azashiin/USBHDMIMonitor/releases)
+
+## Screenshots
+
+### HDMI Preview
+
+**No signal state**
+
+![USB HDMI Monitor - No signal](./media/screenshots/Console_Off.png)
+
+**Console connected**
+
+![USB HDMI Monitor - Console menu](./media/screenshots/Console_On2.png)
+
+### Settings
+
+**General settings**
+
+![USB HDMI Monitor - General settings](./media/screenshots/Settings_general.png)
+
+**Capture settings**
+
+![USB HDMI Monitor - Capture settings](./media/screenshots/Settings_capture.png)
+
+**Shortcut settings**
+
+![USB HDMI Monitor - Shortcut settings](./media/screenshots/Settings_shortcut.png)
 
 ## Tested Hardware
 
