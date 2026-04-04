@@ -4,7 +4,7 @@ USB HDMI Monitor is a lightweight native Windows monitor for USB HDMI capture ad
 
 It is designed for people who want to display a console or another HDMI source on a PC without the overhead of OBS when they do not need streaming or scene management.
 
-This public repository is the product hub:
+This public repository is the product hub for USB HDMI Monitor:
 - release binaries
 - screenshots and media
 - changelog and documentation
@@ -28,10 +28,14 @@ The source code is maintained separately in a private repository.
 
 ## Download
 
-Current local release package:
-- [`releases/latest/USBHDMIMonitor.exe`](./releases/latest/USBHDMIMonitor.exe)
+Latest public release:
+- [`USB HDMI Monitor v1.0.0`](https://github.com/Azashiin/USBHDMIMonitor/releases/tag/v1.0.0)
 
-When published on GitHub, the recommended distribution path is the repository `Releases` page.
+Direct download:
+- [`USBHDMIMonitor-v1.0.0-win64.zip`](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.0.0/USBHDMIMonitor-v1.0.0-win64.zip)
+
+All future builds will be published through the repository `Releases` page:
+- [`Releases`](https://github.com/Azashiin/USBHDMIMonitor/releases)
 
 ## Tested Hardware
 
