@@ -1,0 +1,15 @@
+USB HDMI Monitor
+Public binary distribution notice
+
+Copyright (c) 2026 Asashiin. All rights reserved.
+
+This public repository is intended to distribute release binaries, documentation,
+screenshots, and product information.
+
+Unless explicitly stated otherwise in writing by the author:
+- the source code is not licensed for public reuse
+- redistribution of modified builds is not permitted
+- commercial reuse, resale, or repackaging is not permitted
+
+All trademarks, hardware names, and platform names remain the property of their
+respective owners.
