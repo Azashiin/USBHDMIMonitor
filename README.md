@@ -1,101 +1,159 @@
 # USB HDMI Monitor
 
-🇫🇷 Version française :
+Turn your PC into a monitor for your console — instantly.
+
+No OBS. No setup. No scene configuration.
+
+Just plug your HDMI capture device, launch the app, and play.
+
+🇫🇷 French version:
 [README_FR.md](./README_FR.md)
 
-USB HDMI Monitor is a lightweight native Windows monitor for USB HDMI capture adapters.
+---
 
-It is designed for people who want to display a console or another HDMI source on a PC without the overhead of OBS when they do not need streaming or scene management.
+## Overview
 
-This public repository is the product hub for USB HDMI Monitor:
-- release binaries
-- screenshots and media
-- changelog and documentation
+USB HDMI Monitor is a lightweight native Windows application designed to display HDMI sources (console, camera, etc.) through USB capture devices.
 
-The source code is maintained separately in a private repository.
+Unlike OBS or streaming software, it focuses on one thing:
 
-![USB HDMI Monitor - In game preview](./media/screenshots/Console_On1.png)
+➡️ simple, fast, plug-and-play HDMI viewing
+
+---
 
 ## Why Use It
 
-- Faster and simpler than opening a full broadcast suite
-- Low-friction HDMI preview for USB UVC capture dongles
-- Fullscreen mode with local GPU upscaling
-- Automatic audio monitoring when Windows exposes a matching audio endpoint
-- Screenshot capture with preview
-- Optional Windows startup watcher for automatic source detection
+- ⚡ Instant HDMI display — no configuration required  
+- 🧩 No OBS complexity — no scenes, no audio routing  
+- 🖥️ Clean fullscreen experience  
+- 🔊 Automatic audio playback  
+- 📸 Instant screenshots  
+- 📋 Clipboard capture (paste directly into Discord)  
+- ⏪ Instant replay  
+- 🎮 Built for playing, not streaming  
 
-## Best For
+---
 
-- Console players using a cheap USB HDMI capture dongle as a software screen
-- Users who want a clean HDMI viewer on PC
-- People who do not need OBS scenes, streaming setup, or recording workflows
+## Why Not OBS?
+
+OBS is powerful — but it’s not designed for quick HDMI viewing.
+
+It requires:
+- scene setup  
+- source configuration  
+- audio routing  
+- unnecessary complexity for simple use  
+
+USB HDMI Monitor is designed for:
+- instant display  
+- zero setup  
+- minimal interface  
+
+---
 
 ## Download
 
-Latest public release:
-- [`USB HDMI Monitor v1.0.0`](https://github.com/Azashiin/USBHDMIMonitor/releases/tag/v1.0.0)
+👉 **[Download latest version](https://github.com/Azashiin/USBHDMIMonitor/releases/latest)**
 
-Direct download:
-- [`USBHDMIMonitor-v1.0.0-win64.zip`](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.0.0/USBHDMIMonitor-v1.0.0-win64.zip)
+All versions:
+https://github.com/Azashiin/USBHDMIMonitor/releases
 
-All future builds will be published through the repository `Releases` page:
-- [`Releases`](https://github.com/Azashiin/USBHDMIMonitor/releases)
+---
+
+## Features
+
+### 🎮 Instant HDMI Display
+- Plug your capture device and instantly see your console  
+- No setup, no scenes, no configuration  
+
+### 🖥️ Clean Fullscreen Experience
+- Distraction-free fullscreen mode  
+- Optimized for playing, not streaming  
+
+### ⚡ Low-Friction Usage
+- Fast startup  
+- Minimal interface  
+- Designed for immediate use  
+
+### 🔊 Automatic Audio Playback
+- Audio is automatically detected and played when available  
+- No manual routing or setup required  
+
+### 📸 Instant Screenshots
+- Press **F2** to capture your screen instantly  
+- Preview included for quick access  
+
+### 📋 Clipboard Capture (Discord-ready)
+- Press **Ctrl+C** to copy a screenshot directly to clipboard  
+- Paste instantly into Discord, chat, or any app  
+- No files, no folders, no extra steps  
+
+### ⏪ Instant Replay
+- Save the last moments of your gameplay  
+- No need to record everything in advance  
+
+### 🔴 Lightweight Recording
+- Record your gameplay without a full streaming setup  
+- Simple and efficient  
+
+### 🎛️ Flexible Capture Settings
+- Select device, resolution, and frame rate  
+- Works with most UVC-compatible HDMI capture devices  
+
+### ⌨️ Custom Shortcuts
+- Configure hotkeys for quick actions  
+
+### 🧩 Tray Integration
+- Runs quietly in the system tray  
+- Quick access anytime  
+
+### 🚀 Startup Detection (Optional)
+- Automatically detect and start when your capture device is available  
+
+---
 
 ## Screenshots
 
 ### HDMI Preview
 
-**No signal state**
+**No signal**
 
 ![USB HDMI Monitor - No signal](./media/screenshots/Console_Off.png)
 
 **Console connected**
 
-![USB HDMI Monitor - Console menu](./media/screenshots/Console_On2.png)
+![USB HDMI Monitor - Console](./media/screenshots/Console_On2.png)
 
 ### Settings
 
-**General settings**
+![General settings](./media/screenshots/Settings_general.png)
+![Capture settings](./media/screenshots/Settings_capture.png)
+![Shortcuts](./media/screenshots/Settings_shortcut.png)
 
-![USB HDMI Monitor - General settings](./media/screenshots/Settings_general.png)
-
-**Capture settings**
-
-![USB HDMI Monitor - Capture settings](./media/screenshots/Settings_capture.png)
-
-**Shortcut settings**
-
-![USB HDMI Monitor - Shortcut settings](./media/screenshots/Settings_shortcut.png)
+---
 
 ## Tested Hardware
 
-USB HDMI Monitor is primarily designed and tested around USB UVC HDMI capture adapters.
+USB HDMI Monitor is designed for USB UVC HDMI capture adapters.
 
 Important:
-- compatibility depends on what the capture device, USB link, and HDMI source actually expose
-- this is not positioned as a universal professional broadcast capture solution
-- this project is not affiliated with the manufacturer of any capture dongle
+- compatibility depends on what the device exposes  
+- not intended as a professional broadcast solution  
+- not affiliated with capture device manufacturers  
 
-## Current Feature Set
-
-- device, resolution, and frame-rate selection
-- fullscreen monitor mode
-- audio volume control
-- screenshot capture
-- configurable shortcuts
-- settings window
-- tray integration and startup watcher
+---
 
 ## Project Status
 
-This public repository intentionally does not contain the application source code.
+This public repository does not include the application source code.
 
-It exists to:
-- present the project publicly
-- distribute builds
-- provide screenshots and release notes
+It is used to:
+- present the project  
+- distribute builds  
+- share screenshots and updates  
 
-## License And Distribution
+---
 
-See [`LICENSE.txt`](./LICENSE.txt).
+## License
+
+See [`LICENSE.txt`](./LICENSE.txt)
