@@ -1,5 +1,8 @@
 # USB HDMI Monitor
 
+🇫🇷 Version française :
+[README_FR.md](./README_FR.md)
+
 USB HDMI Monitor is a lightweight native Windows monitor for USB HDMI capture adapters.
 
 It is designed for people who want to display a console or another HDMI source on a PC without the overhead of OBS when they do not need streaming or scene management.
