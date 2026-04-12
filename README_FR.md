@@ -1,159 +1,108 @@
 # USB HDMI Monitor
 
-Transformez votre PC en écran pour votre console — instantanément.
+USB HDMI Monitor est un moniteur Windows natif et léger pour les adaptateurs de capture USB HDMI.
 
-Pas d’OBS. Pas de configuration. Pas de scènes.
+Il a été conçu pour les utilisateurs qui veulent afficher une console ou une autre source HDMI sur un PC sans la lourdeur d'OBS lorsqu'ils n'ont pas besoin de streaming ni de gestion de scènes.
 
-Branchez votre carte de capture HDMI, lancez le logiciel, jouez.
+Ce dépôt public est la vitrine produit de USB HDMI Monitor :
+- binaires de release
+- captures d'écran et médias
+- notes de version et documentation
 
-🇬🇧 English version:
-[README.md](./README.md)
+Le code source de l'application est maintenu séparément dans un dépôt privé.
 
----
-
-## Présentation
-
-USB HDMI Monitor est une application Windows légère conçue pour afficher une source HDMI (console, caméra, etc.) via un périphérique de capture USB.
-
-Contrairement aux logiciels de streaming comme OBS, il se concentre sur une seule chose :
-
-➡️ afficher votre source HDMI rapidement, simplement et sans configuration
-
----
-
-## Pourquoi utiliser ce logiciel ?
-
-- ⚡ Affichage HDMI instantané — aucune configuration requise  
-- 🧩 Pas de complexité OBS — pas de scènes, pas de routage audio  
-- 🖥️ Mode plein écran propre et fluide  
-- 🔊 Lecture audio automatique  
-- 📸 Capture d’écran instantanée  
-- 📋 Capture vers presse-papier (coller directement sur Discord)  
-- ⏪ Instant Replay (revenir sur les dernières secondes)  
-- 🎮 Conçu pour jouer, pas pour streamer  
-
----
-
-## Pourquoi pas OBS ?
-
-OBS est un excellent logiciel, mais il est conçu pour le streaming et l’enregistrement.
-
-Pour un simple affichage HDMI, cela implique souvent :
-- configuration de scènes  
-- ajout de sources  
-- réglages audio  
-- manipulation inutilement complexe  
-
-USB HDMI Monitor propose :
-- un affichage immédiat  
-- zéro configuration  
-- une interface minimaliste  
-
----
-
-## Télécharger
-
-👉 **[Télécharger la dernière version](https://github.com/Azashiin/USBHDMIMonitor/releases/latest)**
-
-Toutes les versions :
-https://github.com/Azashiin/USBHDMIMonitor/releases
-
----
-
-## Fonctionnalités
-
-### 🎮 Affichage HDMI instantané
-- Branchez votre périphérique et voyez immédiatement votre console  
-- Aucun paramétrage nécessaire  
-
-### 🖥️ Expérience plein écran propre
-- Mode plein écran sans distraction  
-- Optimisé pour jouer, pas pour streamer  
-
-### ⚡ Utilisation sans friction
-- Démarrage rapide  
-- Interface minimale  
-- Accès immédiat  
-
-### 🔊 Lecture audio automatique
-- L’audio est détecté et joué automatiquement  
-- Aucun réglage requis  
-
-### 📸 Capture d’écran instantanée
-- Appuyez sur **F2** pour capturer l’écran  
-- Aperçu immédiat  
-
-### 📋 Capture vers presse-papier (Discord-ready)
-- Appuyez sur **Ctrl+C** pour copier l’image directement  
-- Collez instantanément dans Discord, chat ou autre  
-- Aucun fichier à gérer  
-
-### ⏪ Instant Replay
-- Sauvegardez les dernières secondes de jeu  
-- Pas besoin d’enregistrer en continu  
-
-### 🔴 Enregistrement léger
-- Enregistrez votre gameplay simplement  
-- Sans configuration lourde  
-
-### 🎛️ Paramètres de capture
-- Choix du périphérique, résolution et framerate  
-- Compatible avec la plupart des périphériques UVC  
-
-### ⌨️ Raccourcis personnalisables
-- Configurez vos touches pour un accès rapide  
-
-### 🧩 Intégration barre système
-- Fonctionne en arrière-plan  
-- Accès rapide  
-
-### 🚀 Détection au démarrage (optionnel)
-- Lance automatiquement le logiciel si un périphérique est détecté  
-
----
-
-## Captures d’écran
+## Captures
 
 ### Aperçu HDMI
 
-**Aucun signal**
+Vue principale avec source active :
 
-![USB HDMI Monitor - No signal](./media/screenshots/Console_Off.png)
+![Console allumée - menu](./media/screenshots/Console_On1.png)
 
-**Console connectée**
+Vue principale en jeu :
 
-![USB HDMI Monitor - Console](./media/screenshots/Console_On2.png)
+![Console allumée - jeu](./media/screenshots/Console_On2.png)
+
+Vue principale sans signal HDMI :
+
+![Console éteinte](./media/screenshots/Console_Off.png)
 
 ### Paramètres
 
+Paramètres généraux :
+
 ![Paramètres généraux](./media/screenshots/Settings_general.png)
-![Paramètres capture](./media/screenshots/Settings_capture.png)
-![Raccourcis](./media/screenshots/Settings_shortcut.png)
 
----
+Paramètres de capture :
 
-## Compatibilité matériel
+![Paramètres de capture](./media/screenshots/Settings_capture.png)
 
-USB HDMI Monitor est conçu pour fonctionner avec des cartes de capture HDMI USB compatibles UVC.
+Paramètres de raccourcis :
+
+![Paramètres de raccourcis](./media/screenshots/Settings_shortcut.png)
+
+## Pourquoi l'utiliser
+
+- Plus rapide et plus simple qu'une suite de diffusion complète
+- Aperçu HDMI à faible friction pour les dongles de capture USB UVC
+- Mode plein écran avec upscale GPU local
+- Monitoring audio automatique lorsque Windows expose un périphérique audio correspondant
+- Capture d'écran avec aperçu
+- Enregistrement manuel simple et Instant Replay
+- Watcher de démarrage optionnel pour la détection automatique de source
+
+## Idéal Pour
+
+- Les joueurs console qui utilisent un dongle de capture USB HDMI bon marché comme écran logiciel
+- Les utilisateurs qui veulent une visionneuse HDMI propre sur PC
+- Les personnes qui n'ont pas besoin de scènes OBS, de configuration de streaming ou d'un workflow de production complet
+
+## Téléchargement
+
+Dernière release publique :
+- [`USB HDMI Monitor Releases`](https://github.com/Azashiin/USBHDMIMonitor/releases)
+
+Téléchargement direct :
+- [`USBHDMIMonitor-Setup-v1.51.0.exe`](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.51.0/USBHDMIMonitor-Setup-v1.51.0.exe)
+
+Toutes les futures versions seront publiées via la page `Releases` du dépôt :
+- [`Releases`](https://github.com/Azashiin/USBHDMIMonitor/releases)
+
+## Matériel Testé
+
+USB HDMI Monitor est principalement conçu et testé autour d'adaptateurs de capture HDMI USB UVC.
 
 Important :
-- la compatibilité dépend du matériel utilisé  
-- ce logiciel n’est pas une solution professionnelle  
-- aucun lien avec les fabricants de cartes de capture  
+- la compatibilité dépend de ce que le périphérique de capture, la liaison USB et la source HDMI exposent réellement
+- ce projet n'est pas positionné comme une solution universelle de capture broadcast professionnelle
+- ce projet n'est affilié à aucun fabricant de dongle de capture
 
----
+## Fonctionnalités Actuelles
 
-## État du projet
+- sélection du périphérique, de la résolution et de la fréquence d'images
+- mode moniteur plein écran
+- contrôle du volume audio
+- capture d'écran
+- enregistrement manuel
+- Instant Replay
+- raccourcis configurables
+- fenêtre de paramètres
+- intégration zone de notification et watcher de démarrage
 
-Ce dépôt public ne contient pas le code source de l’application.
+## Notes de Version
 
-Il sert à :
-- présenter le projet  
-- distribuer les versions  
-- partager les captures et mises à jour  
+- [Changelog anglais](./CHANGELOG.md)
+- [Changelog français](./CHANGELOG_FR.md)
 
----
+## État du Projet
 
-## Licence
+Ce dépôt public ne contient volontairement pas le code source de l'application.
 
-Voir [`LICENSE.txt`](./LICENSE.txt)
+Il existe pour :
+- présenter le projet publiquement
+- distribuer les builds
+- fournir des captures d'écran et notes de release
+
+## Licence Et Distribution
+
+Voir [`LICENSE.txt`](./LICENSE.txt).

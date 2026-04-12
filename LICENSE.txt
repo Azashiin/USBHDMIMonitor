@@ -3,8 +3,7 @@ Public binary distribution notice
 
 Copyright (c) 2026 Asashiin. All rights reserved.
 
-This public repository is intended to distribute release binaries, documentation,
-screenshots, and product information.
+This project and its installable binaries are distributed by the author.
 
 Unless explicitly stated otherwise in writing by the author:
 - the source code is not licensed for public reuse
