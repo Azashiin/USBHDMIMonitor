@@ -1,108 +1,64 @@
 # USB HDMI Monitor
 
-USB HDMI Monitor est un moniteur Windows natif et léger pour les adaptateurs de capture USB HDMI.
+Un moniteur Windows natif pour afficher une console ou une autre source HDMI à travers un boîtier de capture USB UVC.
 
-Il a été conçu pour les utilisateurs qui veulent afficher une console ou une autre source HDMI sur un PC sans la lourdeur d'OBS lorsqu'ils n'ont pas besoin de streaming ni de gestion de scènes.
+[English](./README.md) · [Releases](https://github.com/Azashiin/USBHDMIMonitor/releases) · [Historique](./CHANGELOG_FR.md) · [Licence](./LICENSE.txt)
 
-Ce dépôt public est la vitrine produit de USB HDMI Monitor :
-- binaires de release
-- captures d'écran et médias
-- notes de version et documentation
+## Préversion publique 1.52.1 — build 1054
 
-Le code source de l'application est maintenu séparément dans un dépôt privé.
+Cette préversion ajoute une interface sombre et des **réglages d'image comme sur une télé**. Elle est distribuée avec un installateur Windows pour les essais. Les 32 contrôles natifs et les contrôles de livraison passent ; la capture HDMI réelle, le son matériel et les reconnexions physiques restent à valider sur les boîtiers des testeurs.
 
-## Captures
+**[Télécharger l'installateur 1.52.1](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.52.1/USBHDMIMonitor-Setup-v1.52.1.exe)** · [Notes et fichiers de la préversion](https://github.com/Azashiin/USBHDMIMonitor/releases/tag/v1.52.1)
 
-### Aperçu HDMI
+La version stable précédente reste disponible : [installateur 1.51.0](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.51.0/USBHDMIMonitor-Setup-v1.51.0.exe).
 
-Vue principale avec source active :
+![Nouveau panneau Image](./media/screenshots/Picture_Settings_v1.52.1.png)
 
-![Console allumée - menu](./media/screenshots/Console_On1.png)
+## Réglages d'image
 
-Vue principale en jeu :
+- Modes **Standard, Cinéma, Jeu, Dynamique et Personnalisé**.
+- **Luminosité, contraste, couleur et netteté** de 0 à 100.
+- Température **Chaud / Neutre / Froid**.
+- Préférences et remise à zéro indépendantes pour chaque mode.
+- Comparaison avec l'image d'origine.
+- Gamma, teinte, balance Rouge/Vert/Bleu et gestion ICC facultative dans **Avancé**.
 
-![Console allumée - jeu](./media/screenshots/Console_On2.png)
+Ces réglages modifient l'image vidéo dans l'application. Le mode Jeu est un préréglage visuel ; il ne change pas la latence du boîtier. La chaîne d'affichage est SDR 8 bits. Les réglages d'image et l'ICC s'appliquent à l'aperçu et aux captures d'image ; les vidéos et les replays conservent les couleurs de la source.
 
-Vue principale sans signal HDMI :
+![Modes d'image](./media/screenshots/Picture_Modes_v1.52.1.png)
 
-![Console éteinte](./media/screenshots/Console_Off.png)
+## Démarrage rapide
 
-### Paramètres
+1. Lancez l'installateur `USBHDMIMonitor-Setup-v1.52.1.exe` et suivez l'assistant.
+2. Lancez **USB HDMI Monitor** depuis le menu Démarrer, puis choisissez le boîtier, la résolution et la fréquence. L'application peut ouvrir automatiquement la source sélectionnée.
+3. Sans boîtier, utilisez le raccourci **Mire de demonstration** du menu Démarrer ou **Mire démo** dans l'application : la mire n'ouvre aucun périphérique de capture ou audio.
+4. Ouvrez **Image** pour régler le rendu, ou **Paramètres** pour les captures, l'audio, les enregistrements et les raccourcis.
 
-Paramètres généraux :
+L'installateur propose le français et l'anglais, les raccourcis et la désinstallation. Les mises à jour conservent les préférences. Les guides sont accessibles dans ce dépôt ; les résultats des contrôles et les sommes SHA-256 accompagnent la préversion.
 
-![Paramètres généraux](./media/screenshots/Settings_general.png)
+## Fonctions
 
-Paramètres de capture :
+- Aperçu HDMI et plein écran avec mise à l'échelle GPU.
+- Audio lorsque Windows expose un périphérique correspondant au boîtier.
+- Captures PNG/JPEG, copie de l'image et retours visuels.
+- Enregistrements manuels et Instant Replay en MP4.
+- Raccourcis configurables, zone de notification et options de lancement Windows.
+- Journaux et export de diagnostic depuis les paramètres.
 
-![Paramètres de capture](./media/screenshots/Settings_capture.png)
+## Configuration
 
-Paramètres de raccourcis :
+Windows 10 ou 11 **x64**. Pour une vraie source HDMI : boîtier USB UVC reconnu par Windows. La compatibilité, les formats et l'audio dépendent du boîtier, de ses pilotes, de la liaison USB et de la source HDMI.
 
-![Paramètres de raccourcis](./media/screenshots/Settings_shortcut.png)
+Raccourcis par défaut : **F2** capture, **Ctrl+C** copie, **F9** enregistrement, **F3** replay, **F10** paramètres, **F11** plein écran, **Échap** retour en fenêtre, **M** muet. Les listes de modes et de températures se commandent aussi avec les flèches et Entrée.
 
-## Pourquoi l'utiliser
+## Tests et retours
 
-- Plus rapide et plus simple qu'une suite de diffusion complète
-- Aperçu HDMI à faible friction pour les dongles de capture USB UVC
-- Mode plein écran avec upscale GPU local
-- Monitoring audio automatique lorsque Windows expose un périphérique audio correspondant
-- Capture d'écran avec aperçu
-- Enregistrement manuel simple et Instant Replay
-- Watcher de démarrage optionnel pour la détection automatique de source
+Suivez le [guide de test matériel](./TEST_GUIDE_FR.md). Pour les réglages avancés, consultez le [guide Image et ICC](./docs/PICTURE_SETTINGS_FR.md). Une mire logicielle ne remplace pas une calibration mesurée.
 
-## Idéal Pour
+Pour signaler un problème, indiquez la version, le modèle du boîtier, la source HDMI, la résolution/fréquence, la version de Windows et les étapes de reproduction dans les [issues](https://github.com/Azashiin/USBHDMIMonitor/issues).
 
-- Les joueurs console qui utilisent un dongle de capture USB HDMI bon marché comme écran logiciel
-- Les utilisateurs qui veulent une visionneuse HDMI propre sur PC
-- Les personnes qui n'ont pas besoin de scènes OBS, de configuration de streaming ou d'un workflow de production complet
+## Dépôt public
 
-## Téléchargement
+Ce dépôt distribue les binaires, la documentation, les captures et les notes de version. Le code source est maintenu séparément dans un dépôt privé. Voir [LICENSE.txt](./LICENSE.txt) pour les conditions de distribution.
 
-Dernière release publique :
-- [`USB HDMI Monitor Releases`](https://github.com/Azashiin/USBHDMIMonitor/releases)
-
-Téléchargement direct :
-- [`USBHDMIMonitor-Setup-v1.51.0.exe`](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.51.0/USBHDMIMonitor-Setup-v1.51.0.exe)
-
-Toutes les futures versions seront publiées via la page `Releases` du dépôt :
-- [`Releases`](https://github.com/Azashiin/USBHDMIMonitor/releases)
-
-## Matériel Testé
-
-USB HDMI Monitor est principalement conçu et testé autour d'adaptateurs de capture HDMI USB UVC.
-
-Important :
-- la compatibilité dépend de ce que le périphérique de capture, la liaison USB et la source HDMI exposent réellement
-- ce projet n'est pas positionné comme une solution universelle de capture broadcast professionnelle
-- ce projet n'est affilié à aucun fabricant de dongle de capture
-
-## Fonctionnalités Actuelles
-
-- sélection du périphérique, de la résolution et de la fréquence d'images
-- mode moniteur plein écran
-- contrôle du volume audio
-- capture d'écran
-- enregistrement manuel
-- Instant Replay
-- raccourcis configurables
-- fenêtre de paramètres
-- intégration zone de notification et watcher de démarrage
-
-## Notes de Version
-
-- [Changelog anglais](./CHANGELOG.md)
-- [Changelog français](./CHANGELOG_FR.md)
-
-## État du Projet
-
-Ce dépôt public ne contient volontairement pas le code source de l'application.
-
-Il existe pour :
-- présenter le projet publiquement
-- distribuer les builds
-- fournir des captures d'écran et notes de release
-
-## Licence Et Distribution
-
-Voir [`LICENSE.txt`](./LICENSE.txt).
+Les captures HDMI de la version stable précédente restent disponibles dans [media/screenshots](./media/screenshots).

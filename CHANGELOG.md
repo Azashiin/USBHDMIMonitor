@@ -3,6 +3,17 @@
 This changelog now keeps only the main product milestones.
 Small fixes, UI polish passes, and short-lived intermediate steps are intentionally omitted.
 
+## 1.52.1 — build 1054 — public preview
+
+- Dark interface with a collapsible, TV-style picture inspector.
+- Standard, Cinema, Game, Dynamic and Custom modes with independent memory and reset.
+- Brightness, contrast, color and sharpness on a 0–100 scale; Warm, Neutral or Cool temperature.
+- Gamma, tint, RGB white balance and optional ICC under Advanced; hardware-free demo pattern.
+- sRGB screenshots; manual MP4 recordings and replays retain source colors.
+- Fix shutdown/recovery freezes, frame copying, save failures and replay export across segments.
+- 32 native checks and release checks pass. Physical HDMI capture, hardware audio and USB reconnection tests are still required.
+- Windows installer with shortcuts, updates and uninstall; stable 1.51.0 remains available.
+
 ## 1.51.0 - Build 1051
 
 - Added an integrated startup guide directly inside the monitor window, rendered on the modern GPU overlay path.

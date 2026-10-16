@@ -3,6 +3,17 @@
 Cet historique ne conserve plus que les grands jalons du produit.
 Les petits correctifs, ajustements UI et etapes intermediaires trop fines sont volontairement retires.
 
+## 1.52.1 — build 1054 — préversion publique
+
+- Interface sombre avec panneau Image repliable, inspiré des écrans et des télés.
+- Modes Standard, Cinéma, Jeu, Dynamique et Personnalisé, mémoire indépendante et remise à zéro par mode.
+- Luminosité, contraste, couleur et netteté de 0 à 100 ; température Chaud, Neutre ou Froid.
+- Gamma, teinte, balance RVB et gestion ICC dans Avancé ; mire sans matériel.
+- Captures d'image sRGB ; enregistrements manuels et replays MP4 conservant les couleurs de la source.
+- Corrections de blocages de fermeture/reprise, de copies d'images, de sauvegarde et de replay sur plusieurs segments.
+- 32 contrôles natifs et contrôles de livraison validés. Essais HDMI, audio matériel et reconnexions physiques encore requis.
+- Distribution par installateur Windows, avec raccourcis, mise à jour et désinstallation ; la version stable 1.51.0 reste disponible.
+
 ## 1.51.0 - Build 1051
 
 - Ajout d'un guide de demarrage integre directement dans la fenetre du moniteur, rendu sur l'overlay GPU moderne.
