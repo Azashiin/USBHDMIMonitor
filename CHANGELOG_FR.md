@@ -3,6 +3,15 @@
 Cet historique ne conserve plus que les grands jalons du produit.
 Les petits correctifs, ajustements UI et etapes intermediaires trop fines sont volontairement retires.
 
+## 1.52.2 — build 1055 — préversion de réduction de latence
+
+- Demande du mode basse latence Media Foundation pour la capture.
+- File de rendu GPU limitée à une image, y compris après recréation du périphérique.
+- Réutilisation du tampon CPU de rendu ; les réglages couleur neutres et les profils ICC strictement identiques évitent les traitements GPU inutiles.
+- Notification de l'aperçu avant l'initialisation ou le traitement d'enregistrement/replay.
+- Contrôles GPU matériels et WARP, pixels et export sRGB validés ; trois suites CTest passent.
+- Candidat à tester en 1080p50 dans les mêmes conditions que la 1.52.1. Aucun gain manette-écran mesuré sur boîtier réel n'est annoncé.
+
 ## 1.52.1 — build 1054 — préversion publique
 
 - Interface sombre avec panneau Image repliable, inspiré des écrans et des télés.

@@ -4,11 +4,11 @@ A native Windows monitor for viewing a console or another HDMI source through a 
 
 [Français](./README_FR.md) · [Releases](https://github.com/Azashiin/USBHDMIMonitor/releases) · [Changelog](./CHANGELOG.md) · [License](./LICENSE.txt)
 
-## Public preview 1.52.1 — build 1054
+## Public preview 1.52.2 — build 1055
 
-This preview adds a dark interface and **TV-style picture settings**. A Windows installer is available for testing. All 32 native checks and release checks pass; physical HDMI capture, hardware audio and USB reconnection still require testing with capture adapters.
+This preview targets the display delay reported at 1080p50: Media Foundation low-latency mode, a one-frame GPU queue, a lighter neutral color path, and preview notification before recording/replay work. All 32 native checks and three CTest suites pass. Controller-to-screen improvement still needs measurement on the tester's capture adapter.
 
-**[Download installer 1.52.1](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.52.1/USBHDMIMonitor-Setup-v1.52.1.exe)** · [Preview notes and files](https://github.com/Azashiin/USBHDMIMonitor/releases/tag/v1.52.1)
+**[Download installer 1.52.2](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.52.2/USBHDMIMonitor-Setup-v1.52.2.exe)** · [Preview notes and files](https://github.com/Azashiin/USBHDMIMonitor/releases/tag/v1.52.2)
 
 The previous stable release remains available: [1.51.0 installer](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.51.0/USBHDMIMonitor-Setup-v1.51.0.exe).
 
@@ -29,7 +29,7 @@ These controls adjust the video picture in the app. Game is a visual preset and 
 
 ## Quick start
 
-1. Run `USBHDMIMonitor-Setup-v1.52.1.exe` and follow the setup wizard.
+1. Run `USBHDMIMonitor-Setup-v1.52.2.exe` and follow the setup wizard.
 2. Launch **USB HDMI Monitor** from the Start menu and select the capture device, resolution and frame rate. The app may open the selected device automatically.
 3. Without an adapter, use the **Demo pattern** Start menu shortcut or the demo button in the app. The pattern does not open a capture or audio device.
 4. Open **Picture** to adjust the image, or **Settings** for screenshots, audio, recordings and shortcuts.

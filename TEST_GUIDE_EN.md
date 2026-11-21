@@ -1,4 +1,13 @@
-# USB HDMI Monitor 1.52.1 — public preview test guide
+# USB HDMI Monitor 1.52.2 — public preview test guide
+
+## Compare display delay at 1080p50
+
+Compare 1.52.1 and 1.52.2 using the same adapter, USB port, HDMI source, display, **1920 × 1080 at 50 Hz**, picture mode and ICC profiles. Note the frame rate actually reported by the app. The 1.52.2 queue optimizations apply automatically to all picture modes.
+
+Try a repeatable controller action in windowed and fullscreen modes. Compare Standard, the current picture settings and **Show original picture** to isolate color-processing cost. Report whether the delay is constant, grows over time or occurs during recording/replay work. If possible, film the controller and display together to compare action-to-response frame counts.
+
+Hardware-free tests check the GPU queue and rendering; they do not measure physical controller-to-screen latency.
+
 
 ## Without an adapter
 

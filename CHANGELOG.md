@@ -3,6 +3,15 @@
 This changelog now keeps only the main product milestones.
 Small fixes, UI polish passes, and short-lived intermediate steps are intentionally omitted.
 
+## 1.52.2 — build 1055 — latency reduction preview
+
+- Request Media Foundation low-latency capture processing.
+- Limit the GPU render queue to one frame, including device recreation.
+- Reuse the CPU upload buffer; neutral color adjustments and strictly identical ICC profiles avoid unnecessary GPU work.
+- Notify the preview before recording/replay initialization and processing.
+- Hardware/WARP GPU queue checks, pixels and sRGB export validated; three CTest suites pass.
+- Test this candidate at 1080p50 under the same conditions as 1.52.1. No measured hardware controller-to-screen improvement is claimed.
+
 ## 1.52.1 — build 1054 — public preview
 
 - Dark interface with a collapsible, TV-style picture inspector.

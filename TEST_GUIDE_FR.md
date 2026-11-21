@@ -1,4 +1,13 @@
-# USB HDMI Monitor 1.52.1 — préversion publique
+# USB HDMI Monitor 1.52.2 — préversion publique
+
+## Comparer le délai en 1080p50
+
+Comparez la 1.52.1 et la 1.52.2 avec le même boîtier, port USB, source HDMI, écran, résolution **1920 × 1080 à 50 Hz**, mode Image et profils ICC. Notez la fréquence réellement affichée par l'application. Les optimisations de mise en attente de la 1.52.2 s'appliquent automatiquement à tous les modes Image.
+
+Essayez une action répétable à la manette, d'abord en fenêtre puis en plein écran. Comparez le mode Standard aux réglages actuels, puis à **Voir l'image d'origine** pour isoler le coût du traitement couleur. Notez si le délai est constant, augmente avec le temps, ou apparaît lors d'un enregistrement/replay. Si possible, filmez ensemble la manette et l'écran pour comparer le nombre d'images entre l'action et sa réponse.
+
+Le logiciel ne mesure pas ici le délai total boîtier, source et écran. Le test sans matériel vérifie la file GPU et le rendu, pas le délai physique manette-écran.
+
 
 Cette préversion publique conserve les fonctions de capture et propose une interface sombre avec un menu Image inspiré des écrans et des télés. La gestion ICC est accessible dans Avancé. Les essais matériels restent à effectuer avec les testeurs.
 

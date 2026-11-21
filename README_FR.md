@@ -4,11 +4,11 @@ Un moniteur Windows natif pour afficher une console ou une autre source HDMI à 
 
 [English](./README.md) · [Releases](https://github.com/Azashiin/USBHDMIMonitor/releases) · [Historique](./CHANGELOG_FR.md) · [Licence](./LICENSE.txt)
 
-## Préversion publique 1.52.1 — build 1054
+## Préversion publique 1.52.2 — build 1055
 
-Cette préversion ajoute une interface sombre et des **réglages d'image comme sur une télé**. Elle est distribuée avec un installateur Windows pour les essais. Les 32 contrôles natifs et les contrôles de livraison passent ; la capture HDMI réelle, le son matériel et les reconnexions physiques restent à valider sur les boîtiers des testeurs.
+Cette préversion vise le retard d'affichage signalé en 1080p50 : mode basse latence Media Foundation, file GPU limitée à une image, traitement neutre allégé et notification de l'aperçu avant le travail d'enregistrement/replay. Les 32 contrôles natifs et les trois suites CTest passent. Le gain manette vers écran reste à mesurer sur le boîtier du testeur.
 
-**[Télécharger l'installateur 1.52.1](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.52.1/USBHDMIMonitor-Setup-v1.52.1.exe)** · [Notes et fichiers de la préversion](https://github.com/Azashiin/USBHDMIMonitor/releases/tag/v1.52.1)
+**[Télécharger l'installateur 1.52.2](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.52.2/USBHDMIMonitor-Setup-v1.52.2.exe)** · [Notes et fichiers de la préversion](https://github.com/Azashiin/USBHDMIMonitor/releases/tag/v1.52.2)
 
 La version stable précédente reste disponible : [installateur 1.51.0](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.51.0/USBHDMIMonitor-Setup-v1.51.0.exe).
 
@@ -29,7 +29,7 @@ Ces réglages modifient l'image vidéo dans l'application. Le mode Jeu est un pr
 
 ## Démarrage rapide
 
-1. Lancez l'installateur `USBHDMIMonitor-Setup-v1.52.1.exe` et suivez l'assistant.
+1. Lancez l'installateur `USBHDMIMonitor-Setup-v1.52.2.exe` et suivez l'assistant.
 2. Lancez **USB HDMI Monitor** depuis le menu Démarrer, puis choisissez le boîtier, la résolution et la fréquence. L'application peut ouvrir automatiquement la source sélectionnée.
 3. Sans boîtier, utilisez le raccourci **Mire de demonstration** du menu Démarrer ou **Mire démo** dans l'application : la mire n'ouvre aucun périphérique de capture ou audio.
 4. Ouvrez **Image** pour régler le rendu, ou **Paramètres** pour les captures, l'audio, les enregistrements et les raccourcis.
