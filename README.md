@@ -4,15 +4,23 @@ A native Windows monitor for viewing a console or another HDMI source through a 
 
 [Français](./README_FR.md) · [Releases](https://github.com/Azashiin/USBHDMIMonitor/releases) · [Changelog](./CHANGELOG.md) · [License](./LICENSE.txt)
 
-## Public preview 1.52.2 — build 1055
+## Public preview 1.53.0 — build 1056
 
-This preview targets the display delay reported at 1080p50: Media Foundation low-latency mode, a one-frame GPU queue, a lighter neutral color path, and preview notification before recording/replay work. All 32 native checks and three CTest suites pass. Controller-to-screen improvement still needs measurement on the tester's capture adapter.
+This preview adds a **FidelityFX FSR 1** spatial upscaling engine: EASU reconstruction plus adaptive RCAS sharpening, for displaying a 1080p input up to 4K. Enable it in Settings > Video > Upscaling engine. Standard remains the default; GPU cost and real capture latency still require testing on the target hardware.
 
-**[Download installer 1.52.2](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.52.2/USBHDMIMonitor-Setup-v1.52.2.exe)** · [Preview notes and files](https://github.com/Azashiin/USBHDMIMonitor/releases/tag/v1.52.2)
+**[Download installer 1.53.0](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.53.0/USBHDMIMonitor-Setup-v1.53.0.exe)** · [Preview notes and files](https://github.com/Azashiin/USBHDMIMonitor/releases/tag/v1.53.0)
 
 The previous stable release remains available: [1.51.0 installer](https://github.com/Azashiin/USBHDMIMonitor/releases/download/v1.51.0/USBHDMIMonitor-Setup-v1.51.0.exe).
 
 ![New picture settings](./media/screenshots/Picture_Settings_v1.52.1.png)
+
+## Upscaling up to 4K
+
+In **Settings > Video**, leave **Allow GPU upscaling** enabled and choose **FSR 1 - 4K** under **Upscaling engine**. The Direct3D 11 spatial engine reconstructs edges with EASU, then applies adaptive RCAS sharpening. It works in windowed and fullscreen modes at the actual preview size, up to 3840 × 2160.
+
+Smooth remains the default. FSR adds GPU work and cannot recover all detail from a native 4K source. Performance, smoothness and controller-to-screen latency still require testing with the tester’s adapter and RTX 4060. Screenshots and videos retain input resolution. See the [French FSR guide](./docs/UPSCALING_FR.md).
+
+![FSR 1 settings](./media/screenshots/Upscaling_Settings_v1.53.0.png)
 
 ## Picture controls
 
@@ -29,7 +37,7 @@ These controls adjust the video picture in the app. Game is a visual preset and 
 
 ## Quick start
 
-1. Run `USBHDMIMonitor-Setup-v1.52.2.exe` and follow the setup wizard.
+1. Run `USBHDMIMonitor-Setup-v1.53.0.exe` and follow the setup wizard.
 2. Launch **USB HDMI Monitor** from the Start menu and select the capture device, resolution and frame rate. The app may open the selected device automatically.
 3. Without an adapter, use the **Demo pattern** Start menu shortcut or the demo button in the app. The pattern does not open a capture or audio device.
 4. Open **Picture** to adjust the image, or **Settings** for screenshots, audio, recordings and shortcuts.

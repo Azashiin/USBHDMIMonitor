@@ -3,6 +3,15 @@
 Cet historique ne conserve plus que les grands jalons du produit.
 Les petits correctifs, ajustements UI et etapes intermediaires trop fines sont volontairement retires.
 
+## 1.53.0 — build 1056 — préversion FSR 1
+
+- Moteur spatial Direct3D 11 : reconstruction EASU puis netteté adaptative RCAS, jusqu'en 4K UHD.
+- Mode facultatif dans Paramètres > Vidéo, avec maintien du mode standard et des anciens réglages.
+- Traitement GPU sans historique temporel ; maintien de la limite d'une image dans la file de présentation.
+- Cible séparée pour les captures natives sRGB, indépendante de la taille de l'écran et du moteur choisi.
+- Tests GPU matériels/WARP, sortie 3840 × 2160, orientation, dimensions et mire de comparaison.
+- Coût et qualité à valider sur le matériel de capture ; aucun équivalent à une source 4K native n'est revendiqué.
+
 ## 1.52.2 — build 1055 — préversion de réduction de latence
 
 - Demande du mode basse latence Media Foundation pour la capture.

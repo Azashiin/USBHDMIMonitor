@@ -1,4 +1,14 @@
-# USB HDMI Monitor 1.52.2 — préversion publique
+# USB HDMI Monitor 1.53.0 — préversion publique
+
+## Tester FSR 1 sur la RTX 4060
+
+Dans **Paramètres > Vidéo**, activez **Autoriser l’agrandissement GPU**, puis sélectionnez **FSR 1 - 4K** dans **Moteur d’agrandissement**. Standard/Douce reste le mode par défaut. Utilisez une entrée **1080p50**, un affichage 4K réglé en 3840 × 2160 et le plein écran. En fenêtre, le badge FSR1 indique la hauteur calculée si l’en-tête dispose d’assez de place ; il est masqué en plein écran.
+
+Comparez Douce et FSR 1 dans cette même version, avec les mêmes réglages Image/ICC et une netteté modérée. Vérifiez les contours, les petits textes et les mouvements, puis comparez le délai manette-écran avec une action répétable. Précisez si l’enregistrement ou le replay était actif. Les mesures effectuées sur un autre GPU ne prédisent pas les performances de la RTX 4060 ; aucune mesure HDMI réelle sur cette carte n’est encore disponible.
+
+Testez aussi le retour en fenêtre, le déplacement entre écrans, **Voir l’image d’origine** et la reprise après reconnexion du boîtier. Les captures PNG/JPEG et Ctrl+C doivent conserver les dimensions de l’entrée, quelle que soit la taille d’affichage. Les vidéos et replays restent au format source. Un profil ICC doit continuer à modifier l’aperçu quand FSR est actif.
+
+FSR 1 reconstruit les pixels ; il ne recrée pas tous les détails d’une source 4K native. Le moteur peut accentuer le bruit ou les escaliers et ajoute du travail GPU. Consultez le [guide FSR](docs/UPSCALING_FR.md).
 
 ## Comparer le délai en 1080p50
 
@@ -52,7 +62,7 @@ La configuration est conservée dans `%APPDATA%\USB HDMI Monitor`, avec les coul
 
 ## Validation de cette livraison
 
-32 contrôles natifs automatisés et les contrôles de livraison sont fournis dans `VALIDATION_RESULTS.txt`. Ils couvrent notamment les médias synthétiques, les conversions ICC, le rendu GPU, les captures sRGB, les chemins Unicode et les anciens correctifs de stabilité.
+37 contrôles natifs automatisés et les contrôles de livraison sont fournis dans `VALIDATION_RESULTS.txt`. Ils couvrent notamment les médias synthétiques, les conversions ICC, le rendu GPU, les captures sRGB, les chemins Unicode et les anciens correctifs de stabilité.
 
 L'interface a aussi été vérifiée sur la mire. La capture HDMI réelle, le monitoring audio matériel, les reconnexions physiques et les sessions prolongées restent à valider par le testeur. Aucune exactitude colorimétrique mesurée n'est revendiquée. Cette chaîne d'affichage est SDR 8 bits ; le HDR n'est pas implémenté.
 

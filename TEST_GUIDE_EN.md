@@ -1,4 +1,14 @@
-# USB HDMI Monitor 1.52.2 — public preview test guide
+# USB HDMI Monitor 1.53.0 — public preview test guide
+
+## Test FSR 1 on the RTX 4060
+
+In **Settings > Video**, enable **Allow GPU upscaling**, then select **FSR 1 - 4K** under **Upscaling engine**. Smooth remains the default. Use a **1080p50** input, a display set to 3840 × 2160 and fullscreen. In windowed mode, the FSR1 badge reports the computed height when the header has enough space; it is hidden in fullscreen.
+
+Compare Smooth and FSR 1 in this same version with identical Picture/ICC settings and moderate sharpness. Check edges, small text and motion, then compare controller-to-screen delay with a repeatable action. Report whether recording/replay was active. Measurements from a different GPU do not predict RTX 4060 performance; no real HDMI measurement on that card is available yet.
+
+Also test returning to windowed mode, moving between displays, **Show original picture**, and recovery after reconnecting the adapter. PNG/JPEG screenshots and Ctrl+C must retain input dimensions regardless of display size. Recordings and replays keep source dimensions. An ICC profile must still affect the preview with FSR enabled.
+
+FSR 1 reconstructs pixels; it cannot recover all detail from a native 4K source. It may emphasize noise or aliasing and adds GPU work. See the [French FSR guide](docs/UPSCALING_FR.md).
 
 ## Compare display delay at 1080p50
 
@@ -41,6 +51,6 @@ Settings: `%APPDATA%\USB HDMI Monitor`. Picture preferences: `USBHDMIMonitor.ini
 
 ## Validation
 
-`VALIDATION_RESULTS.txt` lists 32 passing native checks plus release checks. They exercise synthetic media, picture-mode memory, migration, white balance, sharpness, GPU/WARP rendering, ICC conversion, Unicode paths and release metadata. Hardware capture, audio, USB reconnections and long sessions remain to be verified by testers.
+`VALIDATION_RESULTS.txt` lists 37 passing native checks plus release checks. They exercise synthetic media, picture-mode memory, migration, white balance, sharpness, GPU/WARP rendering, ICC conversion, Unicode paths and release metadata. Hardware capture, audio, USB reconnections and long sessions remain to be verified by testers.
 
 For feedback, provide app version, adapter model, HDMI source, resolution/frame rate, Windows version and exact reproduction steps in the repository's issues. Review any diagnostic archive before sharing it.

@@ -3,6 +3,15 @@
 This changelog now keeps only the main product milestones.
 Small fixes, UI polish passes, and short-lived intermediate steps are intentionally omitted.
 
+## 1.53.0 — build 1056 — FSR 1 preview
+
+- Optional Direct3D 11 spatial EASU reconstruction and adaptive RCAS sharpening up to 4K UHD.
+- Video settings retain the standard modes and existing preferences.
+- GPU-only intermediates, no temporal history, and the one-frame presentation limit retained.
+- Separate native-size sRGB screenshot target, independent of display size and upscaling mode.
+- Hardware/WARP pixel, orientation, resize and real 3840 x 2160 output tests, with comparison images.
+- Capture-hardware cost and quality still require tester validation; reconstructed 1080p is not native 4K detail.
+
 ## 1.52.2 — build 1055 — latency reduction preview
 
 - Request Media Foundation low-latency capture processing.
